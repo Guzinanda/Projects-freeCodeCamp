@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title> Survey Form </title>
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <h2 id="description">Thank you for taking the time to help us improve our platform</h1>
+
+    <div class="survey-background"></div>
+
+    <div class="survey-container">
+        <form id="survey-form" action="/action_page.php" method="get" target="_blank">
+            <p id="name-label"> Name </p>
+                <input type="text" name="name-label"> <!--TODO: Placeholder with instructions-->
+
+            <p id="email-label"> Email </p>
+                <input type="text" name="email-label"> <!--TODO: Placeholder with instructions + HTML5 validation error valid email-->
+
+            <p id="number-label"> Age (optional) </p>
+                <input type="text" name="number-label"> <!--TODO: Placeholder with instructions + HTML5 validation error only numbers + a min and max-->
+
+            <p id="dropdown-label"> Which option best describes your current role? </p>
+                <select name="role" id="role">
+                    <option value="student"> Student </option>
+                    <option value="fulltime"> Full Time </option>
+                    <option value="halftime"> Half Time </option>
+                    <option value="other"> Other </option>
+                </select>
+            
+            <p class="recommend-label"> Would you recommend freeCodeCamp to a friend? </p> 
+                <label for="radio"><input id="definitely-label" type="radio" name="radio"> Definitely </label><br>
+                <label for="radio"><input id="maybe-label" type="radio" name="radio"> Maybe </label><br>
+                <label for="radio"><input id="notsure-label" type="radio" name="radio"> Not Sure </label><br>
+
+            <p class="feature-label"> What is your favorite feature of freeCodeCamp? </p>
+                <select name="feature" id="feature">
+                    <option value="challenges"> Challenges </option>
+                    <option value="projects"> Projects </option>
+                    <option value="community"> Community </option>
+                    <option value="opensource"> Opensource </option>
+                </select>
+
+            <p class="improved-label"> What would you like to see improved? (Check all that apply) </p>
+                <label for="box"><input id="front-end-label" type="checkbox" name="box"> Front-End Projects </label><br>
+                <label for="box"><input id="back-end-label" type="checkbox" name="box"> Back-End Projects </label><br>
+                <label for="box"><input id="visual-design-label" type="checkbox" name="box"> Visual Design </label><br>
+                <label for="box"><input id="challenges-label" type="checkbox" name="box"> Challenges </label><br>
+
+            <p class="comment-label"> Any comments or suggestions? </p>
+                <textarea rows="4" cols="50" name="comment" form="usrform"> Enter comment here...</textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
