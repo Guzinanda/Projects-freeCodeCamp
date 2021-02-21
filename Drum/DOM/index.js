@@ -6,6 +6,7 @@ for (var i = 0; i < numberOfRightButtons; i++) {
 
 document.querySelector("#rgt").addEventListener("click", gotClick);
 document.querySelector("#iphone").addEventListener("click", playSound);
+document.querySelector("#color").addEventListener("click", changeColor);
 
 
 function playSound() {
@@ -15,4 +16,8 @@ function playSound() {
 
 function gotClick() {
   alert("I got clicked!");
+}
+
+function changeColor() {
+  this.style.color = "white";
 }
