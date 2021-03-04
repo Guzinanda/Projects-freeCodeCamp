@@ -1,0 +1,74 @@
+html { 
+    background: url(/images/background-image.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+/*
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+*/
+
+#survey-tittle{
+    margin-top: 8%;
+    margin-bottom: 50px;
+}
+
+.survey-tittle-h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.survey-tittle-h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+#survey-container{
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+    background: rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+#survey {
+    padding: 50px;
+    color: white;
+}
+
+
+#name-label, #email-label, #number-label, #dropdown-label, #recommend-label, #feature-label, #improved-label, #comment-label{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.button {
+    border: none;
+    background-color: purple;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+  
+  /* On mouse-over */
+  .button:hover {background:plum}
+  .success {color: green;}
+  .info {color: dodgerblue;}
+  .warning {color: orange;}
+  .danger {color: red;}
+  .default {color: black;}
